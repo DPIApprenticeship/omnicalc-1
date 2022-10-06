@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
     render({ :template => "calculation_templates/square_results.html.erb"})
   end
 
+  def blank_square_root_form
+    render({ :template => "calculation_templates/blank_square_root_form.html.erb"})
+  end
+
   def blank_random_form
     render({ :template => "calculation_templates/random_form.html.erb"})
   end
