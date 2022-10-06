@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
     @square_of_num = @num ** 2
     render({ :template => "calculation_templates/square_results.html.erb"})
   end
+
+  def calculate_random
+    render({ :template => "calculation_templates/rand_results.html.erb"})
+  end
 end
